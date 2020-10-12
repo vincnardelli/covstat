@@ -23,6 +23,7 @@ jobs:
         pip install -r requirements.txt
         python update.py
         dir
+        echo 'Hello, world.' >> test.txt
 
     - name: Commit files
       id: commit
