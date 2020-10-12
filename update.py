@@ -50,3 +50,12 @@ df1 = {'indicatori':['Ricoverati', 'In terapia intensiva', 'Decessi giornalieri'
       'picco': [int(np.max(ydata_ospedale)), int(np.max(ydata_terint)), int(np.max(ydata_morti))]}
 df1 = pd.DataFrame(df1)
 df1.to_csv('data/confronto.csv', index=False)
+
+
+df2 = {'Data': range(0, len(ydata)), 
+       'Ricoverati in ospedale / 8': ydata_ospedale/8, 
+      'Terapia intensiva': ydata_terint, 
+      'Deceduti x 5': ydata_morti*5}
+
+df2 = pd.DataFrame(df2)
+df2.to_csv('data/serie.csv', index=False)
