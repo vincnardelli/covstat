@@ -23,8 +23,10 @@ jobs:
         pip install -r requirements.txt
         python update.py
         dir
-        echo 'Hello, world.' >> test.txt
-
+        var=$(date +"%FORMAT_STRING")
+        now=$(date +"%d_%m_%Y %H:%M:%S")
+        echo "Run at ${now}" >> workflow.log
+        
     - name: Commit files
       id: commit
       run: |
