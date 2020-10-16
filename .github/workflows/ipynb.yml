@@ -20,6 +20,7 @@ jobs:
         pip install jupyter
         pip install ipython
         ipython nbconvert CovidPy_Colab.ipynb --to script
+        mv CovidPy_Colab.txt CovidPy_Colab.py
         
     - name: Commit files
       id: commit
