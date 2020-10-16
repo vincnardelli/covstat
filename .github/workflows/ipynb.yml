@@ -17,9 +17,8 @@ jobs:
       run: |
         dir
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
-        pip install jupyter -y
-        pip install ipython -y
+        pip install jupyter
+        pip install ipython
         ipython nbconvert CovidPy_Colab.ipynb --to script
         
     - name: Commit files
