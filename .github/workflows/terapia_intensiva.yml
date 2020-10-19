@@ -22,6 +22,9 @@ jobs:
         pip install pandas numpy geopandas
         python covid_analisi_terapia_intensiva.py
         dir
+        var=$(date +"%FORMAT_STRING")
+        now=$(date +"%d_%m_%Y %H:%M:%S")
+        echo "Run at ${now}" >> workflow_ti.log
         
     - name: Commit files
       id: commit
