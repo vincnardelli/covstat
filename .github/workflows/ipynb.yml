@@ -1,4 +1,4 @@
-name: ipynb
+name: Import colab notebook
 
 on:
   push
