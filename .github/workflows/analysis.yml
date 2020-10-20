@@ -25,6 +25,7 @@ jobs:
         ls
         mv confronto.csv ../data/confronto.csv
         mv serie.csv ../data/serie.csv
+        mv regioni.csv ../data/regioni.csv
 
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
