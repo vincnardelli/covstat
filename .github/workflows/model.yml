@@ -12,17 +12,20 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python
-      uses: actions/setup-python@v1
-      with:
-        python-version: '3.x'
-    - name: Install dependencies
+    - name: Build docker
+      id: build
       run: |
-        dir
-        python -m pip install --upgrade pip
-        pip install numpy pandas matplotlib scipy
-        python model.py
+        cd model
+        docker build --tag covstat_model .
+        
+    - name: Run docker
+      id: run
+      run: |
+        cd model
+        docker run --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp covstat_model python model.py
+        ls
+        mv modello.csv ../data/modello.csv
         
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        commit_message: Run model
+        commit_message: Update model

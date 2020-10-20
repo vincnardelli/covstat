@@ -20,7 +20,7 @@ jobs:
         pip install jupyter
         pip install ipython
         ipython nbconvert model.ipynb --to script
-        mv model.txt model.py
+        mv model.txt model/model.py
         
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
