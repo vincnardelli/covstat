@@ -21,14 +21,16 @@ jobs:
     - name: Run docker
       id: run
       run: |
-        docker run --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp spatial_covstat python spatial/code.py
-        ls spatial
+        cd spatial
+        docker run --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp spatial_covstat python code.py
+        ls
     - name: Commit files
       id: commit
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "github-actions"
-        git add spatial/.
+        cd spatial
+        git add .
         set +e  # Grep succeeds with nonzero exit codes to show results.
         git status | grep modified
         if [ $? -eq 0 ]
