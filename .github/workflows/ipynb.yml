@@ -19,8 +19,8 @@ jobs:
         python -m pip install --upgrade pip
         pip install jupyter
         pip install ipython
-        ipython nbconvert CovidPy_Colab.ipynb --to script
-        mv CovidPy_Colab.txt CovidPy_Colab.py
+        ipython nbconvert model.ipynb --to script
+        mv model.txt model.py
         
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
