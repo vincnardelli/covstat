@@ -61,4 +61,53 @@ df2 = {'Data': range(0, len(ydata)),
 df2 = pd.DataFrame(df2)
 df2.to_csv('serie.csv', index=False)
 
+data_reg2 = pd.read_csv('https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-regioni/dpc-covid19-ita-regioni.csv')
+
+# crea la funzione per confrontare i picchi
+
+def regione_picco(nome_regione):
+  mask = data_reg2['denominazione_regione']==nome_regione
+  data_reg =data_reg2.loc[mask,:]
+  xdatetime=np.array(data_reg['data'])
+
+  xdata_reg=pd.to_numeric(range(data_reg.shape[0]))
+  ydata_terint_reg=np.array(data_reg['terapia_intensiva'])
+  ydata_ospedale_reg=np.array(data_reg['totale_ospedalizzati'])
+
+  osp_oggi = ydata_ospedale_reg[-1]
+  osp_max  = np.max(ydata_ospedale_reg)
+  osp_fracpicco = round(osp_oggi/osp_max*100,1)
+  osp_datamax = xdatetime[np.argmax(ydata_ospedale_reg)]
+
+
+  ter_oggi = ydata_terint_reg[-1]
+  ter_max  = np.max(ydata_terint_reg)
+  ter_fracpicco = round(ter_oggi/ter_max*100,1)
+  ter_datamax = xdatetime[np.argmax(ydata_terint_reg)]
+
+  ter_popolazione = round(ter_oggi/df_popregioni.loc[nome_regione,'Popolazione']*10**6,2)
+
+  return [nome_regione,osp_oggi,osp_max,osp_datamax,osp_fracpicco,ter_oggi,ter_max,ter_datamax,ter_fracpicco,ter_popolazione]
+
+# crea il dataframe e lo esporta
+
+# lista regioni da Nord a Sud
+lista_regioni = np.array(['Valle d\'Aosta','Liguria','Piemonte','Lombardia','Veneto','Friuli Venezia Giulia','P.A. Bolzano','P.A. Trento',
+                          'Emilia-Romagna','Toscana','Marche','Umbria','Abruzzo','Lazio',
+                          'Molise','Campania','Puglia','Basilicata','Calabria','Sicilia','Sardegna'])
+
+piccopicco_reg = []
+
+for nomereg in lista_regioni:
+  piccopicco_reg.append(regione_picco(nomereg))
+
+piccopicco_reg = pd.DataFrame(piccopicco_reg)
+
+piccopicco_reg.columns=['Nome regione','Ospedalizzati attuali','Ospedalizzati al picco','Data picco osp.','Frazione osp. picco',
+                        'Terapia intensiva oggi','Terapia intensiva picco','Data picco terint.','Frazione terint. picco','Terint/popolazione']
+
+piccopicco_reg.to_csv('regioni.csv',index=False)
+
+
+
 
