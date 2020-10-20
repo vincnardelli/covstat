@@ -1,4 +1,4 @@
-name: spatial
+name: Generazione mappa
 
 on:
   push:
