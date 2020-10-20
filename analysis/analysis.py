@@ -61,6 +61,20 @@ df2 = {'Data': range(0, len(ydata)),
 df2 = pd.DataFrame(df2)
 df2.to_csv('serie.csv', index=False)
 
+nomiregioni       = np.array(['Abruzzo','Basilicata','P.A. Bolzano','Calabria','Campania','Emilia-Romagna',
+                              'Friuli Venezia Giulia','Lazio','Liguria','Lombardia','Marche','Molise','Piemonte',
+                              'Puglia','Sardegna','Sicilia','Toscana','P.A. Trento','Umbria','Valle d\'Aosta','Veneto'])
+
+
+
+pop_regioni   =  np.array([1304970, 559084,533050, 1947131, 5801692, 4459477, 1215220, 5879082, 1550640, 10060574, 1525271, 305617, 4356406, 4029053, 1639591, 4999891, 3729641,541380, 882015, 125666, 4905854])
+
+
+df_popregioni=pd.DataFrame(pop_regioni)
+df_popregioni.index=nomiregioni
+df_popregioni.columns=['Popolazione']
+
+
 data_reg2 = pd.read_csv('https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-regioni/dpc-covid19-ita-regioni.csv')
 
 # crea la funzione per confrontare i picchi
