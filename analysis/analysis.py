@@ -89,13 +89,13 @@ def regione_picco(nome_regione):
   ydata_ospedale_reg=np.array(data_reg['totale_ospedalizzati'])
 
   osp_oggi = ydata_ospedale_reg[-1]
-  osp_max  = np.max(ydata_ospedale_reg)
+  osp_max  = np.max(ydata_ospedale_reg[0:180])
   osp_fracpicco = round(osp_oggi/osp_max*100,1)
   osp_datamax = xdatetime[np.argmax(ydata_ospedale_reg)]
 
 
   ter_oggi = ydata_terint_reg[-1]
-  ter_max  = np.max(ydata_terint_reg)
+  ter_max  = np.max(ydata_terint_reg[0:180])
   ter_fracpicco = round(ter_oggi/ter_max*100,1)
   ter_datamax = xdatetime[np.argmax(ydata_terint_reg)]
 
@@ -120,8 +120,8 @@ piccopicco_reg = pd.DataFrame(piccopicco_reg)
 piccopicco_reg.columns=['Nome regione','Ospedalizzati attuali','Ospedalizzati al picco','Data picco osp.','Frazione osp. picco',
                         'Terapia intensiva oggi','Terapia intensiva picco','Data picco terint.','Frazione terint. picco','Terint/popolazione']
 
+piccopicco_reg['Data picco osp.'] = pd.to_datetime(piccopicco_reg['Data picco osp.']).dt.strftime('%d/%m/%Y')
+piccopicco_reg['Data picco terint.'] = pd.to_datetime(piccopicco_reg['Data picco terint.']).dt.strftime('%d/%m/%Y')
+
+
 piccopicco_reg.to_csv('regioni.csv',index=False)
-
-
-
-
