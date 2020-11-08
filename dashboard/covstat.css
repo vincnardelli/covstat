@@ -1,0 +1,20 @@
+/* Covstat CSS
+-------------------------------------------------- */
+
+.navbar-brand img{
+  height: 30px!important;
+  margin: 10px 0px 10px 0px;
+}
+
+.navbar{
+  border-bottom: 0.7px solid #858585 ;
+}
+
+.notes{
+  margin-top: 40px;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 100px;
+  color: #666666;
+  text-align: justify;
+}
