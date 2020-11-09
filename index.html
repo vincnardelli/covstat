@@ -64,27 +64,31 @@
 
   <div class="container">
   
-    <h2 class="mt-3">Previsioni ricoverati in terapia intensiva</h2>
 
 
           <div class="row">
 
         <div class="col-12">
-        
+          <h2 class="mt-3">Previsioni ricoverati in terapia intensiva</h2>
+
           Tutte le previsioni sono state ottenute tramite il modello descritto in fondo alla pagina. La previsione va considerata nell'intevallo tra le due curve rosse tratteggiate. 
 
       <div class="flourish-embed flourish-chart" data-src="visualisation/4229120" data-height="400px"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
 
-      <h2 class="mt-3 mb-5">Previsioni ospedalizzati</h2>
+      <h2 class="mt-3">Previsioni ospedalizzati</h2>
 
 
       <div class="flourish-embed flourish-chart" data-src="visualisation/4294044" data-height="400px"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
-      <h2 class="mt-3 mb-5">Previsioni decessi giornalieri</h2>
-
+      <h2 class="mt-3">Previsioni decessi giornalieri</h2>
+      Media mobile a 7 giorni
 
     <div class="flourish-embed flourish-chart" data-src="visualisation/4281597" data-height="400px"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+
+    <h2 class="mt-3">Stima Rt Nazionale:  1.08 - 1.37</h2>
+   
 
         </div>
         
@@ -132,7 +136,7 @@
       <img src="model.jpg" width="100%">
 
       <h4 class="mt-3">Assunzioni del modello sui parametri</h4>
-
+      <p>I parametri iniziali del modello sono impostati seguendo queste assunzioni:</p>
       <p>Il tempo di permanenza medio in terapia intensiva è 5-7 giorni<br> 
       Fonte: Grasselli G, Zangrillo A, Zanella A, et al. Baseline Characteristics and Outcomes of 1591 Patients Infected With SARS-CoV-2 Admitted to ICUs of the Lombardy Region, Italy. JAMA. 2020;323(16):1574–1581. doi:10.1001/jama.2020.5394</p>
       
@@ -143,6 +147,8 @@
       <p>I giorni di ricovero in totale sono mediamente 12 giorni.
       
       Fonte: <a href="https://www.ars.toscana.it/2-articoli/4355-ricoveri-covid-19-in-toscana-prime-analisi-ars-toscana.html">Ars Toscana</a> </p>
+
+      <p>Tramite il fit con algoritmo di ottimizzazione questi parametri vengono riadattati alle curve osservate negli ultimi giorni.</p>
     </div>
 
   </div>
