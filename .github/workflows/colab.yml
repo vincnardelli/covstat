@@ -1,0 +1,27 @@
+
+name: Import colab notebook
+
+on:
+  push
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v1
+      with:
+        python-version: '3.x'
+    - name: Install dependencies
+      run: |
+        dir
+        python -m pip install --upgrade pip
+        pip install jupyter
+        pip install ipython
+        ipython nbconvert covstat_vaccini.ipynb --to script
+        mv covstat_vaccini.txt vaccini/covstat_vaccini.py
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: Update python script
