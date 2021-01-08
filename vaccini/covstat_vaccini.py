@@ -52,13 +52,13 @@ dati_istat = pd.read_csv("https://raw.githubusercontent.com/vincnardelli/covstat
 dati_istat
 
 anagrafica = anagrafica.merge(dati_istat, on="fascia_anagrafica")
-anagrafica['perc_maschile'] = anagrafica['sesso_maschile']/anagrafica['pop_maschile']
-anagrafica['perc_femminile'] = anagrafica['sesso_femminile']/anagrafica['pop_femminile']
+anagrafica['Maschi'] = anagrafica['sesso_maschile']/anagrafica['pop_maschile']
+anagrafica['Femmine'] = anagrafica['sesso_femminile']/anagrafica['pop_femminile']
 
-anagrafica_graph = anagrafica[['fascia_anagrafica','perc_maschile', 'perc_femminile']]
+anagrafica_graph = anagrafica[['fascia_anagrafica','Maschi', 'Femmine']]
 anagrafica_graph.set_index('fascia_anagrafica', inplace = True)
-anagrafica_graph['perc_femminile'] = anagrafica_graph['perc_femminile']*-100
-anagrafica_graph['perc_maschile'] = anagrafica_graph['perc_maschile']*100
+anagrafica_graph['Femmine'] = anagrafica_graph['Femmine']*-100
+anagrafica_graph['Maschi'] = anagrafica_graph['Maschi']*100
 anagrafica_graph = round(anagrafica_graph, 2)
 anagrafica_graph.to_csv("italia_anagrafica.csv")
 anagrafica_graph
