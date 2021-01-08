@@ -30,10 +30,10 @@ df.tail(1).to_csv("confronto_italia_germania_last.csv")
 df = vaccinations[vaccinations.location.isin(stati)]
 df.drop(columns=['iso_code', 'total_vaccinations', 'daily_vaccinations', 'daily_vaccinations_per_million'], inplace=True)
 df = df.melt(id_vars = ['location', 'date'])
-df = df.pivot(index = ['date', 'variable'], columns = 'location', values= 'value')
 df.reset_index(inplace=True)
 df.date = pd.to_datetime(df.date).dt.strftime('%d-%m-%Y')
 df.to_csv("confronto_italia_germania.csv")
+df
 
 """## Confronto internazionale"""
 
