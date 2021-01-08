@@ -48,7 +48,7 @@ df
 """## Analisi vaccini Italia"""
 
 anagrafica = pd.read_csv("https://raw.githubusercontent.com/italia/covid19-opendata-vaccini/master/dati/anagrafica-vaccini-summary-latest.csv")
-dati_istat = pd.read_csv("dati_istat.csv", sep=";")
+dati_istat = pd.read_csv("https://raw.githubusercontent.com/vincnardelli/covstat/master/vaccini/dati_istat.csv", sep=";")
 dati_istat
 
 anagrafica = anagrafica.merge(dati_istat, on="fascia_anagrafica")

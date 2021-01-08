@@ -1,6 +1,7 @@
-name: Run model
+name: Aggiornamento dashboard vaccini
 
 on:
+  push
   schedule:
     # * is a special character in YAML so you have to quote this string
     - cron:  '*/15 * * * *'
@@ -14,17 +15,17 @@ jobs:
     - name: Build docker
       id: build
       run: |
-        cd model
-        docker build --tag covstat_model .
+        cd vaccini
+        docker build --tag covstat_vaccini .
         
     - name: Run docker
       id: run
       run: |
-        cd model
-        docker run --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp covstat_model python model.py
+        cd vaccini
+        docker run --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp covstat_vaccini python covstat_vaccini.py
         ls
-        mv modello.csv ../data/modello.csv
+        mv *.csv ../data/*.csv
 
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        commit_message: Update model
+        commit_message: Aggiornamento vaccini
