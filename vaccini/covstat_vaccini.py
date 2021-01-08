@@ -24,9 +24,16 @@ df['spread'] = df['total_vaccinations_per_hundred_Germany'] - df['total_vaccinat
 df.dropna(axis=0, inplace = True)
 df['total_vaccinations_Germany'] = df['total_vaccinations_Germany'].astype(int)
 df['total_vaccinations_Italy'] = df['total_vaccinations_Italy'].astype(int)
-df.to_csv("confronto_italia_germania.csv")
 df.tail(1).to_csv("confronto_italia_germania_last.csv")
-df
+
+
+df = vaccinations[vaccinations.location.isin(stati)]
+df.drop(columns=['iso_code', 'total_vaccinations', 'daily_vaccinations', 'daily_vaccinations_per_million'], inplace=True)
+df = df.melt(id_vars = ['location', 'date'])
+df = df.pivot(index = ['date', 'variable'], columns = 'location', values= 'value')
+df.reset_index(inplace=True)
+df.date = pd.to_datetime(df.date).dt.strftime('%d-%m-%Y')
+df.to_csv("confronto_italia_germania.csv")
 
 """## Confronto internazionale"""
 
