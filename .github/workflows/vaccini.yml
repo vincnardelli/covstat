@@ -24,7 +24,7 @@ jobs:
         cd vaccini
         docker run --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp covstat_vaccini python covstat_vaccini.py
         ls
-        mv *.csv ../data/*.csv
+        mv *.csv ../data/.
 
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
