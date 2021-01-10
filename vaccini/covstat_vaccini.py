@@ -73,20 +73,31 @@ popolation = pd.DataFrame([name_regions, popolation_regions, area]).transpose()
 popolation.columns = ['regione', 'popolazione', 'area'] 
 
 regioni = pd.read_csv("https://raw.githubusercontent.com/italia/covid19-opendata-vaccini/master/dati/somministrazioni-vaccini-summary-latest.csv")
-regioni[regioni['data_somministrazione'] == '2020-12-27']
 regioni = regioni.merge(popolation, on='area')
 
-regioni['Totale vaccinazioni ogni cento abitanti'] = regioni['totale']/regioni['popolazione']*100
-regioni['Totale vaccinazioni ogni cento abitanti'] = round(regioni['Totale vaccinazioni ogni cento abitanti'].astype(float), 4)
+regioni['Totale vaccinazioni'] = regioni.groupby(['regione'])['totale'].apply(lambda x: x.cumsum())
+regioni['Totale vaccinazioni ogni cento ab'] = regioni['Totale vaccinazioni']/regioni['popolazione']*100
+regioni['Totale vaccinazioni ogni cento ab'] = round(regioni['Totale vaccinazioni ogni cento ab'].astype(float), 2)
+
+
+regioni['Vaccinazioni giornaliere ogni cento ab'] = regioni['totale']/regioni['popolazione']*100
+regioni['Vaccinazioni giornaliere ogni cento ab'] = round(regioni['Vaccinazioni giornaliere ogni cento ab'].astype(float), 2)
+
 regioni = regioni.rename(columns={'data_somministrazione': 'data', 
-                        'totale': 'Totale vaccinazioni', 
+                        'totale': 'Vaccinazioni giornaliere', 
                         'categoria_operatori_sanitari_sociosanitari': 'Operatori sanitari - sociosanitari', 
                         'categoria_personale_non_sanitario': 'Personale non sanitario', 
                         'categoria_ospiti_rsa': 'Ospiti RSA', 
                         'regione': 'Regione'})
-regioni.reset_index(inplace=True)
-regioni.data = pd.to_datetime(regioni.data).dt.strftime('%d-%m-%Y')
+#regioni.reset_index(inplace=True)
+#regioni.data = pd.to_datetime(regioni.data).dt.strftime('%d-%m-%Y')
 regioni.to_csv("regioni.csv")
-regioni
 
+confronto_regioni = regioni[['data', 'Regione', 'Totale vaccinazioni', 'Totale vaccinazioni ogni cento ab', 'Vaccinazioni giornaliere', 'Vaccinazioni giornaliere ogni cento ab']]
+confronto_regioni = confronto_regioni.melt(id_vars = ['Regione', 'data'])
+confronto_regioni = confronto_regioni.pivot(index = ['data', 'variable'], columns = 'Regione', values= 'value')
+confronto_regioni.reset_index(inplace=True)
+confronto_regioni.data = pd.to_datetime(confronto_regioni.data).dt.strftime('%m-%d-%Y')
+confronto_regioni.to_csv("confronto_regioni.csv")
 
+confronto_regioni
