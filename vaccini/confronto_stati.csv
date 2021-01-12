@@ -183,11 +183,11 @@
 181,11-01-2021,people_vaccinated_per_hundred,0.82,1.2,0.87,3.58,2.72
 182,11-01-2021,Totale vaccinazioni,688782.0,727764.0,406091.0,2843815.0,8987322.0
 183,11-01-2021,Totale vaccinazioni ogni cento abitanti,0.82,1.2,0.87,4.19,2.72
-184,12-01-2021,Vaccinazioni giornaliere,,69185.0,49826.0,,
-185,12-01-2021,Vaccinazioni giornaliere ogni milione ab,,1144.0,1066.0,,
+184,12-01-2021,Vaccinazioni giornaliere,,69185.0,49826.0,,641524.0
+185,12-01-2021,Vaccinazioni giornaliere ogni milione ab,,1144.0,1066.0,,1938.0
 186,12-01-2021,people_fully_vaccinated,,,,,
 187,12-01-2021,people_fully_vaccinated_per_hundred,,,,,
-188,12-01-2021,people_vaccinated,,752608.0,488122.0,,
-189,12-01-2021,people_vaccinated_per_hundred,,1.24,1.04,,
-190,12-01-2021,Totale vaccinazioni,,752608.0,488122.0,,
-191,12-01-2021,Totale vaccinazioni ogni cento abitanti,,1.24,1.04,,
+188,12-01-2021,people_vaccinated,,752608.0,488122.0,,9327138.0
+189,12-01-2021,people_vaccinated_per_hundred,,1.24,1.04,,2.82
+190,12-01-2021,Totale vaccinazioni,,752608.0,488122.0,,9327138.0
+191,12-01-2021,Totale vaccinazioni ogni cento abitanti,,1.24,1.04,,2.82
