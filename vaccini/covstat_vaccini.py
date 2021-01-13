@@ -48,7 +48,7 @@ df.to_csv("confronto_stati.csv")
 df
 
 df[df['variable'].isin(['Totale vaccinazioni', 'Totale vaccinazioni ogni cento abitanti'])].to_csv("confronto_stati_totale.csv")
-df[df['variable'].isin(['Vaccinazioni giornaliere', 'Vaccinazioni giornaliere ogni milione ab'])].to_csv("confronto_stati_incremento.csv")
+df[df['variable'].isin(['Vaccinazioni giornaliere', 'Vaccinazioni giornaliere ogni cento abitanti'])].to_csv("confronto_stati_incremento.csv")
 
 anagrafica = pd.read_csv("https://raw.githubusercontent.com/italia/covid19-opendata-vaccini/master/dati/anagrafica-vaccini-summary-latest.csv")
 dati_istat = pd.read_csv("https://raw.githubusercontent.com/vincnardelli/covstat/master/vaccini/dati_istat.csv", sep=";")
