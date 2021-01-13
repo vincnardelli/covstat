@@ -42,10 +42,10 @@ df.loc[df['variable'] == 'daily_vaccinations', ['variable']] = "Vaccinazioni gio
 df.loc[df['variable'] == 'daily_vaccinations_per_million', ['variable']] = "Vaccinazioni giornaliere ogni milione ab"
 df.loc[df['variable'] == 'total_vaccinations', ['variable']] = "Totale vaccinazioni"
 df.loc[df['variable'] == 'total_vaccinations_per_hundred', ['variable']] = "Totale vaccinazioni ogni cento abitanti"
-
 df.to_csv("confronto_stati.csv")
-df
 
+df[df['variable'].isin(['Totale vaccinazioni', 'Totale vaccinazioni ogni cento abitanti'])].to_csv("confronto_stati_totale.csv")
+df[df['variable'].isin(['Vaccinazioni giornaliere', 'Vaccinazioni giornaliere ogni milione ab'])].to_csv("confronto_stati_incremento.csv")
 
 anagrafica = pd.read_csv("https://raw.githubusercontent.com/italia/covid19-opendata-vaccini/master/dati/anagrafica-vaccini-summary-latest.csv")
 dati_istat = pd.read_csv("https://raw.githubusercontent.com/vincnardelli/covstat/master/vaccini/dati_istat.csv", sep=";")
@@ -108,6 +108,9 @@ confronto_regioni.data = pd.to_datetime(confronto_regioni.data).dt.strftime('%m-
 confronto_regioni.to_csv("confronto_regioni.csv")
 
 confronto_regioni
+
+confronto_regioni[confronto_regioni['variable'].isin(['Totale vaccinazioni', 'Totale vaccinazioni ogni cento ab'])].to_csv("confronto_regioni_totale.csv")
+confronto_regioni[confronto_regioni['variable'].isin(['Vaccinazioni giornaliere', 'Vaccinazioni giornaliere ogni cento ab'])].to_csv("confronto_regioni_incremento.csv")
 
 dfIT = vaccinations[vaccinations['location']=='Italy'].iloc[2:,:]
 dati_ITALIA = np.array(dfIT.iloc[3:,3])/(10**6)
