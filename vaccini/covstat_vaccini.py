@@ -120,7 +120,8 @@ n_dosi = 2
 popolazione = 60*10**6
 obj_minimo = (over65+operatori_sanitari)*2
 obj_ideale = (70/100*60*10**6)*2
-days = np.arange(270,0,-1)[0:len(dfIT_soglie)]
+minimo_daily = n_dosi*(over65+operatori_sanitari)/periodo
+immunità_daily = n_dosi*(soglia_immunita*popolazione)/periodo
 
 dfIT_soglie = dfIT[['date','total_vaccinations']]
 dfIT_soglie = dfIT_soglie.iloc[2:,:]
@@ -131,13 +132,13 @@ dfIT_soglie['minimo'] = minimo_daily*np.arange(1,ll+1)
 dfIT_soglie['immunità'] = immunità_daily*np.arange(1,ll+1)
  
 dfIT_soglie['daily'] = np.diff(np.append(14613,np.array(dfIT_soglie['total_vaccinations'])))
+days = np.arange(270,0,-1)[0:len(dfIT_soglie)]
 
 dfIT_soglie['nane_min']=(obj_minimo-np.array(dfIT_soglie['total_vaccinations']))/days
 dfIT_soglie['nane_ideal']=(obj_ideale-np.array(dfIT_soglie['total_vaccinations']))/days
 
 
-minimo_daily = n_dosi*(over65+operatori_sanitari)/periodo
-immunità_daily = n_dosi*(soglia_immunita*popolazione)/periodo
+
 
 print(minimo_daily)
 print(immunità_daily)
