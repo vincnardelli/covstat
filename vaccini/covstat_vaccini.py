@@ -14,7 +14,10 @@ df.dropna(axis=0, inplace = True)
 df['total_vaccinations_Germany'] = df['total_vaccinations_Germany'].astype(int)
 df['total_vaccinations_Italy'] = df['total_vaccinations_Italy'].astype(int)
 df['spread'] = round(df['spread'], 2)
-df.tail(1).to_csv("confronto_italia_germania_last.csv")
+spread = df.tail(1)
+spread['spread'] = spread['spread']*100
+spread['spread'] = spread['spread'].astype(int)
+spread.to_csv("confronto_italia_germania_last.csv")
 
 df = vaccinations[vaccinations.location.isin(stati)]
 df.drop(columns=['iso_code', 'total_vaccinations', 'daily_vaccinations', 'daily_vaccinations_per_million', 
