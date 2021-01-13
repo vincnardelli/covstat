@@ -29,6 +29,8 @@ df.date = pd.to_datetime(df.date).dt.strftime('%d-%m-%Y')
 df.to_csv("confronto_italia_germania.csv")
 df
 
+vaccinations['daily_vaccinations_per_million'] = vaccinations['daily_vaccinations_per_million']/10000
+
 stati = ['Italy', 'Germany', 'United Kingdom', 'Spain', 'United States']
 df = vaccinations[vaccinations.location.isin(stati)]
 df.drop(columns=['iso_code',
@@ -39,10 +41,11 @@ df = df.pivot(index = ['date', 'variable'], columns = 'location', values= 'value
 df.reset_index(inplace=True)
 df.date = pd.to_datetime(df.date).dt.strftime('%d-%m-%Y')
 df.loc[df['variable'] == 'daily_vaccinations', ['variable']] = "Vaccinazioni giornaliere"
-df.loc[df['variable'] == 'daily_vaccinations_per_million', ['variable']] = "Vaccinazioni giornaliere ogni milione ab"
+df.loc[df['variable'] == 'daily_vaccinations_per_million', ['variable']] = "Vaccinazioni giornaliere ogni cento abitanti"
 df.loc[df['variable'] == 'total_vaccinations', ['variable']] = "Totale vaccinazioni"
 df.loc[df['variable'] == 'total_vaccinations_per_hundred', ['variable']] = "Totale vaccinazioni ogni cento abitanti"
 df.to_csv("confronto_stati.csv")
+df
 
 df[df['variable'].isin(['Totale vaccinazioni', 'Totale vaccinazioni ogni cento abitanti'])].to_csv("confronto_stati_totale.csv")
 df[df['variable'].isin(['Vaccinazioni giornaliere', 'Vaccinazioni giornaliere ogni milione ab'])].to_csv("confronto_stati_incremento.csv")
