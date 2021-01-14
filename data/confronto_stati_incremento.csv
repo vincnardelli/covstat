@@ -1,51 +1,55 @@
-,date,variable,Germany,Italy,Spain,United Kingdom,United States
-0,20-12-2020,Vaccinazioni giornaliere,,,,,
-1,20-12-2020,Vaccinazioni giornaliere ogni cento abitanti,,,,,
-4,21-12-2020,Vaccinazioni giornaliere,,,,44642.0,57909.0
-5,21-12-2020,Vaccinazioni giornaliere ogni cento abitanti,,,,0.0658,0.0175
-8,22-12-2020,Vaccinazioni giornaliere,,,,44642.0,127432.0
-9,22-12-2020,Vaccinazioni giornaliere ogni cento abitanti,,,,0.0658,0.0385
-12,23-12-2020,Vaccinazioni giornaliere,,,,44642.0,150606.0
-13,23-12-2020,Vaccinazioni giornaliere ogni cento abitanti,,,,0.0658,0.0455
-16,24-12-2020,Vaccinazioni giornaliere,,,,44642.0,191001.0
-17,24-12-2020,Vaccinazioni giornaliere ogni cento abitanti,,,,0.0658,0.0577
-20,25-12-2020,Vaccinazioni giornaliere,,,,44642.0,215238.0
-21,25-12-2020,Vaccinazioni giornaliere ogni cento abitanti,,,,0.0658,0.065
-24,26-12-2020,Vaccinazioni giornaliere,,,,44642.0,231396.0
-25,26-12-2020,Vaccinazioni giornaliere ogni cento abitanti,,,,0.0658,0.0699
-28,27-12-2020,Vaccinazioni giornaliere,,,,44642.0,211379.0
-29,27-12-2020,Vaccinazioni giornaliere ogni cento abitanti,,,,0.0658,0.0639
-32,28-12-2020,Vaccinazioni giornaliere,19084.0,1322.0,,45500.0,216147.0
-33,28-12-2020,Vaccinazioni giornaliere ogni cento abitanti,0.0228,0.0022,,0.067,0.0653
-36,29-12-2020,Vaccinazioni giornaliere,30676.0,1250.0,,46358.0,235685.0
-37,29-12-2020,Vaccinazioni giornaliere ogni cento abitanti,0.0366,0.0021,,0.0683,0.0712
-40,30-12-2020,Vaccinazioni giornaliere,39382.0,2412.0,,47216.0,255223.0
-41,30-12-2020,Vaccinazioni giornaliere ogni cento abitanti,0.047,0.004,,0.0696,0.0771
-44,31-12-2020,Vaccinazioni giornaliere,38920.0,7742.0,,48074.0,278776.0
-45,31-12-2020,Vaccinazioni giornaliere ogni cento abitanti,0.0465,0.0128,,0.0708,0.0842
-48,01-01-2021,Vaccinazioni giornaliere,37196.0,8407.0,,48932.0,302329.0
-49,01-01-2021,Vaccinazioni giornaliere ogni cento abitanti,0.0444,0.0139,,0.0721,0.0913
-52,02-01-2021,Vaccinazioni giornaliere,38407.0,13412.0,,49790.0,325882.0
-53,02-01-2021,Vaccinazioni giornaliere ogni cento abitanti,0.0458,0.0222,,0.0733,0.0985
-56,03-01-2021,Vaccinazioni giornaliere,36382.0,16457.0,,50648.0,336949.0
-57,03-01-2021,Vaccinazioni giornaliere ogni cento abitanti,0.0434,0.0272,,0.0746,0.1018
-60,04-01-2021,Vaccinazioni giornaliere,40454.0,26078.0,,71172.0,348017.0
-61,04-01-2021,Vaccinazioni giornaliere ogni cento abitanti,0.0483,0.0431,,0.1048,0.1051
-64,05-01-2021,Vaccinazioni giornaliere,41468.0,37167.0,56505.0,91697.0,339372.0
-65,05-01-2021,Vaccinazioni giornaliere ogni cento abitanti,0.0495,0.0615,0.1209,0.1351,0.1025
-68,06-01-2021,Vaccinazioni giornaliere,41124.0,45696.0,45248.0,112221.0,358887.0
-69,06-01-2021,Vaccinazioni giornaliere ogni cento abitanti,0.0491,0.0756,0.0968,0.1653,0.1084
-72,07-01-2021,Vaccinazioni giornaliere,43686.0,55328.0,41496.0,132745.0,378253.0
-73,07-01-2021,Vaccinazioni giornaliere ogni cento abitanti,0.0521,0.0915,0.0888,0.1955,0.1143
-76,08-01-2021,Vaccinazioni giornaliere,47379.0,66783.0,48786.0,153269.0,419933.0
-77,08-01-2021,Vaccinazioni giornaliere ogni cento abitanti,0.0565,0.1105,0.1043,0.2258,0.1269
-80,09-01-2021,Vaccinazioni giornaliere,48552.0,73396.0,47569.0,173794.0,461263.0
-81,09-01-2021,Vaccinazioni giornaliere ogni cento abitanti,0.0579,0.1214,0.1017,0.256,0.1394
-84,10-01-2021,Vaccinazioni giornaliere,49671.0,76927.0,46759.0,194318.0,546636.0
-85,10-01-2021,Vaccinazioni giornaliere ogni cento abitanti,0.0593,0.1272,0.1,0.2862,0.1651
-88,11-01-2021,Vaccinazioni giornaliere,51855.0,77912.0,46180.0,190250.0,632009.0
-89,11-01-2021,Vaccinazioni giornaliere ogni cento abitanti,0.0619,0.1289,0.0988,0.2802,0.1909
-92,12-01-2021,Vaccinazioni giornaliere,54685.0,77466.0,49826.0,194451.0,641524.0
-93,12-01-2021,Vaccinazioni giornaliere ogni cento abitanti,0.0653,0.1281,0.1066,0.2864,0.1938
-96,13-01-2021,Vaccinazioni giornaliere,,78755.0,58330.0,,710238.0
-97,13-01-2021,Vaccinazioni giornaliere ogni cento abitanti,,0.1303,0.1248,,0.2146
+,date,variable,Germany,Israel,Italy,Spain,United Kingdom,United States
+0,19-12-2020,Vaccinazioni giornaliere,,,,,,
+1,19-12-2020,Vaccinazioni giornaliere ogni cento abitanti,,,,,,
+4,20-12-2020,Vaccinazioni giornaliere,,6362.0,,,,
+5,20-12-2020,Vaccinazioni giornaliere ogni cento abitanti,,0.0735,,,,
+8,21-12-2020,Vaccinazioni giornaliere,,14376.0,,,44642.0,57909.0
+9,21-12-2020,Vaccinazioni giornaliere ogni cento abitanti,,0.1661,,,0.0658,0.0175
+12,22-12-2020,Vaccinazioni giornaliere,,23001.0,,,44642.0,127432.0
+13,22-12-2020,Vaccinazioni giornaliere ogni cento abitanti,,0.2657,,,0.0658,0.0385
+16,23-12-2020,Vaccinazioni giornaliere,,31834.0,,,44642.0,150606.0
+17,23-12-2020,Vaccinazioni giornaliere ogni cento abitanti,,0.3678,,,0.0658,0.0455
+20,24-12-2020,Vaccinazioni giornaliere,,39311.0,,,44642.0,191001.0
+21,24-12-2020,Vaccinazioni giornaliere ogni cento abitanti,,0.4542,,,0.0658,0.0577
+24,25-12-2020,Vaccinazioni giornaliere,,38932.0,,,44642.0,215238.0
+25,25-12-2020,Vaccinazioni giornaliere ogni cento abitanti,,0.4498,,,0.0658,0.065
+28,26-12-2020,Vaccinazioni giornaliere,,37839.0,,,44642.0,231396.0
+29,26-12-2020,Vaccinazioni giornaliere ogni cento abitanti,,0.4372,,,0.0658,0.0699
+32,27-12-2020,Vaccinazioni giornaliere,,51085.0,,,44642.0,211379.0
+33,27-12-2020,Vaccinazioni giornaliere ogni cento abitanti,,0.5902,,,0.0658,0.0639
+36,28-12-2020,Vaccinazioni giornaliere,19084.0,65981.0,1322.0,,45500.0,216147.0
+37,28-12-2020,Vaccinazioni giornaliere ogni cento abitanti,0.0228,0.7623,0.0022,,0.067,0.0653
+40,29-12-2020,Vaccinazioni giornaliere,30676.0,81495.0,1250.0,,46358.0,235685.0
+41,29-12-2020,Vaccinazioni giornaliere ogni cento abitanti,0.0366,0.9415,0.0021,,0.0683,0.0712
+44,30-12-2020,Vaccinazioni giornaliere,39382.0,94149.0,2412.0,,47216.0,255223.0
+45,30-12-2020,Vaccinazioni giornaliere ogni cento abitanti,0.047,1.0877,0.004,,0.0696,0.0771
+48,31-12-2020,Vaccinazioni giornaliere,38920.0,106104.0,7742.0,,48074.0,278776.0
+49,31-12-2020,Vaccinazioni giornaliere ogni cento abitanti,0.0465,1.2259,0.0128,,0.0708,0.0842
+52,01-01-2021,Vaccinazioni giornaliere,37196.0,110720.0,8407.0,,48932.0,302329.0
+53,01-01-2021,Vaccinazioni giornaliere ogni cento abitanti,0.0444,1.2792,0.0139,,0.0721,0.0913
+56,02-01-2021,Vaccinazioni giornaliere,38407.0,116222.0,13412.0,,49790.0,325882.0
+57,02-01-2021,Vaccinazioni giornaliere ogni cento abitanti,0.0458,1.3427,0.0222,,0.0733,0.0985
+60,03-01-2021,Vaccinazioni giornaliere,36382.0,122548.0,16457.0,,50648.0,336949.0
+61,03-01-2021,Vaccinazioni giornaliere ogni cento abitanti,0.0434,1.4158,0.0272,,0.0746,0.1018
+64,04-01-2021,Vaccinazioni giornaliere,40454.0,124044.0,26078.0,,71172.0,348017.0
+65,04-01-2021,Vaccinazioni giornaliere ogni cento abitanti,0.0483,1.4331,0.0431,,0.1048,0.1051
+68,05-01-2021,Vaccinazioni giornaliere,41468.0,120037.0,37167.0,56505.0,91697.0,339372.0
+69,05-01-2021,Vaccinazioni giornaliere ogni cento abitanti,0.0495,1.3868,0.0615,0.1209,0.1351,0.1025
+72,06-01-2021,Vaccinazioni giornaliere,41124.0,113157.0,45696.0,45248.0,112221.0,358887.0
+73,06-01-2021,Vaccinazioni giornaliere ogni cento abitanti,0.0491,1.3073,0.0756,0.0968,0.1653,0.1084
+76,07-01-2021,Vaccinazioni giornaliere,43686.0,107235.0,55328.0,41496.0,132745.0,378253.0
+77,07-01-2021,Vaccinazioni giornaliere ogni cento abitanti,0.0521,1.2389,0.0915,0.0888,0.1955,0.1143
+80,08-01-2021,Vaccinazioni giornaliere,47379.0,106436.0,66783.0,48786.0,153269.0,419933.0
+81,08-01-2021,Vaccinazioni giornaliere ogni cento abitanti,0.0565,1.2297,0.1105,0.1043,0.2258,0.1269
+84,09-01-2021,Vaccinazioni giornaliere,48552.0,102547.0,73396.0,47569.0,173794.0,461263.0
+85,09-01-2021,Vaccinazioni giornaliere ogni cento abitanti,0.0579,1.1848,0.1214,0.1017,0.256,0.1394
+88,10-01-2021,Vaccinazioni giornaliere,49671.0,88061.0,76927.0,46759.0,194318.0,546636.0
+89,10-01-2021,Vaccinazioni giornaliere ogni cento abitanti,0.0593,1.0174,0.1272,0.1,0.2862,0.1651
+92,11-01-2021,Vaccinazioni giornaliere,51855.0,74007.0,77912.0,46180.0,190250.0,632009.0
+93,11-01-2021,Vaccinazioni giornaliere ogni cento abitanti,0.0619,0.855,0.1289,0.0988,0.2802,0.1909
+96,12-01-2021,Vaccinazioni giornaliere,54685.0,64961.0,77466.0,49826.0,194451.0,641524.0
+97,12-01-2021,Vaccinazioni giornaliere ogni cento abitanti,0.0653,0.7505,0.1281,0.1066,0.2864,0.1938
+100,13-01-2021,Vaccinazioni giornaliere,,65764.0,78755.0,58330.0,,710238.0
+101,13-01-2021,Vaccinazioni giornaliere ogni cento abitanti,,0.7598,0.1303,0.1248,,0.2146
+104,14-01-2021,Vaccinazioni giornaliere,,51128.0,,,,
+105,14-01-2021,Vaccinazioni giornaliere ogni cento abitanti,,0.5907,,,,
