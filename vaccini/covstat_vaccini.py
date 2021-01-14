@@ -31,7 +31,7 @@ df
 
 vaccinations['daily_vaccinations_per_million'] = vaccinations['daily_vaccinations_per_million']/10000
 
-stati = ['Italy', 'Germany', 'United Kingdom', 'Spain', 'United States']
+stati = ['Italy', 'Germany', 'United Kingdom', 'Spain', 'United States', 'Israel']
 df = vaccinations[vaccinations.location.isin(stati)]
 df.drop(columns=['iso_code',
                  'people_fully_vaccinated', 'daily_vaccinations_raw', 'people_vaccinated', 'people_vaccinated_per_hundred', 
@@ -69,15 +69,15 @@ anagrafica_graph
 popolation_regions = np.array([ 1304970,      559084,        533050,   1947131,   5801692,         
                                4459477,        1215220,5879082, 1550640,    
                                10060574,  1525271,  305617,    4356406, 4029053, 1639591,  
-                               4999891,  3729641,       541380,  882015,          125666, 4905854])
+                               4999891,  3729641,       541380,  882015,          125666, 4905854, 60000000])
 name_regions       = np.array(['Abruzzo','Basilicata','P.A. Bolzano','Calabria','Campania',
                                'Emilia-Romagna','Friuli Venezia Giulia','Lazio','Liguria',
                                'Lombardia','Marche','Molise','Piemonte','Puglia','Sardegna',
-                               'Sicilia','Toscana','P.A. Trento','Umbria','Valle d\'Aosta','Veneto'])
+                               'Sicilia','Toscana','P.A. Trento','Umbria','Valle d\'Aosta','Veneto', 'Italia'])
 area       = np.array(['ABR','BAS','PAB','CAL','CAM',
                                'EMR','FVG','LAZ','LIG',
                                'LOM','MAR','MOL','PIE','PUG','SAR',
-                               'SIC','TOS','PAT','UMB','VDA','VEN'])
+                               'SIC','TOS','PAT','UMB','VDA','VEN', 'ITA'])
 
 popolation = pd.DataFrame([name_regions, popolation_regions, area]).transpose()
 popolation.columns = ['regione', 'popolazione', 'area'] 
