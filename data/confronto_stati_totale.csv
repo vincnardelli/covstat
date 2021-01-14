@@ -1,55 +1,55 @@
 ,date,variable,Germany,Israel,Italy,Spain,United Kingdom,United States
 2,19-12-2020,Totale vaccinazioni,,54.0,,,,
 3,19-12-2020,Totale vaccinazioni ogni cento abitanti,,0.0,,,,
-6,20-12-2020,Totale vaccinazioni,,6416.0,,,650714.0,556208.0
+6,20-12-2020,Totale vaccinazioni,,6417.0,,,650714.0,556208.0
 7,20-12-2020,Totale vaccinazioni ogni cento abitanti,,0.07,,,0.96,0.17
-10,21-12-2020,Totale vaccinazioni,,28805.0,,,,614117.0
+10,21-12-2020,Totale vaccinazioni,,28814.0,,,,614117.0
 11,21-12-2020,Totale vaccinazioni ogni cento abitanti,,0.33,,,,0.19
-14,22-12-2020,Totale vaccinazioni,,69056.0,,,,
+14,22-12-2020,Totale vaccinazioni,,69082.0,,,,
 15,22-12-2020,Totale vaccinazioni ogni cento abitanti,,0.8,,,,
-18,23-12-2020,Totale vaccinazioni,,127392.0,,,,1008025.0
+18,23-12-2020,Totale vaccinazioni,,127463.0,,,,1008025.0
 19,23-12-2020,Totale vaccinazioni ogni cento abitanti,,1.47,,,,0.3
-22,24-12-2020,Totale vaccinazioni,,196611.0,,,,
+22,24-12-2020,Totale vaccinazioni,,196817.0,,,,
 23,24-12-2020,Totale vaccinazioni ogni cento abitanti,,2.27,,,,
-26,25-12-2020,Totale vaccinazioni,,233643.0,,,,
+26,25-12-2020,Totale vaccinazioni,,233849.0,,,,
 27,25-12-2020,Totale vaccinazioni ogni cento abitanti,,2.7,,,,
-30,26-12-2020,Totale vaccinazioni,,264930.0,,,,1944585.0
+30,26-12-2020,Totale vaccinazioni,,265136.0,,,,1944585.0
 31,26-12-2020,Totale vaccinazioni ogni cento abitanti,,3.06,,,,0.59
-34,27-12-2020,Totale vaccinazioni,23672.0,364010.0,7420.0,,963208.0,
+34,27-12-2020,Totale vaccinazioni,23672.0,364219.0,7420.0,,963208.0,
 35,27-12-2020,Totale vaccinazioni ogni cento abitanti,0.03,4.21,0.01,,1.42,
-38,28-12-2020,Totale vaccinazioni,42756.0,490670.0,8742.0,,,2127143.0
+38,28-12-2020,Totale vaccinazioni,42756.0,490886.0,8742.0,,,2127143.0
 39,28-12-2020,Totale vaccinazioni ogni cento abitanti,0.05,5.67,0.01,,,0.64
-42,29-12-2020,Totale vaccinazioni,85024.0,639523.0,9919.0,,,
+42,29-12-2020,Totale vaccinazioni,85024.0,639755.0,9919.0,,,
 43,29-12-2020,Totale vaccinazioni ogni cento abitanti,0.1,7.39,0.02,,,
-46,30-12-2020,Totale vaccinazioni,141819.0,786438.0,14655.0,,,2794588.0
+46,30-12-2020,Totale vaccinazioni,141819.0,786671.0,14655.0,,,2794588.0
 47,30-12-2020,Totale vaccinazioni ogni cento abitanti,0.17,9.09,0.02,,,0.84
-50,31-12-2020,Totale vaccinazioni,179352.0,939341.0,38389.0,,,
-51,31-12-2020,Totale vaccinazioni ogni cento abitanti,0.21,10.85,0.06,,,
-54,01-01-2021,Totale vaccinazioni,209653.0,1008686.0,49457.0,,,
-55,01-01-2021,Totale vaccinazioni ogni cento abitanti,0.25,11.65,0.08,,,
-58,02-01-2021,Totale vaccinazioni,254112.0,1078482.0,87892.0,,,4225756.0
+50,31-12-2020,Totale vaccinazioni,179439.0,939598.0,38389.0,,,
+51,31-12-2020,Totale vaccinazioni ogni cento abitanti,0.21,10.86,0.06,,,
+54,01-01-2021,Totale vaccinazioni,209742.0,1008946.0,49457.0,,,
+55,01-01-2021,Totale vaccinazioni ogni cento abitanti,0.25,11.66,0.08,,,
+58,02-01-2021,Totale vaccinazioni,254201.0,1078744.0,87892.0,,,4225756.0
 59,02-01-2021,Totale vaccinazioni ogni cento abitanti,0.3,12.46,0.15,,,1.28
-62,03-01-2021,Totale vaccinazioni,278348.0,1221847.0,122621.0,,1317745.0,
+62,03-01-2021,Totale vaccinazioni,278437.0,1222111.0,122621.0,,1317745.0,
 63,03-01-2021,Totale vaccinazioni ogni cento abitanti,0.33,14.12,0.2,,1.94,
-66,04-01-2021,Totale vaccinazioni,325931.0,1358977.0,191290.0,82834.0,,4563260.0
+66,04-01-2021,Totale vaccinazioni,326083.0,1359246.0,191290.0,82834.0,,4563260.0
 67,04-01-2021,Totale vaccinazioni ogni cento abitanti,0.39,15.7,0.32,0.18,,1.38
-70,05-01-2021,Totale vaccinazioni,375298.0,1479782.0,270091.0,139339.0,,4836469.0
+70,05-01-2021,Totale vaccinazioni,375654.0,1480053.0,270091.0,139339.0,,4836469.0
 71,05-01-2021,Totale vaccinazioni ogni cento abitanti,0.45,17.1,0.45,0.3,,1.46
-74,06-01-2021,Totale vaccinazioni,429686.0,1578540.0,334529.0,,,5306797.0
+74,06-01-2021,Totale vaccinazioni,430188.0,1578818.0,334529.0,,,5306797.0
 75,06-01-2021,Totale vaccinazioni ogni cento abitanti,0.51,18.24,0.55,,,1.6
-78,07-01-2021,Totale vaccinazioni,485156.0,1689983.0,425688.0,207323.0,,5919418.0
-79,07-01-2021,Totale vaccinazioni ogni cento abitanti,0.58,19.52,0.7,0.44,,1.79
-82,08-01-2021,Totale vaccinazioni,541307.0,1753741.0,516941.0,277976.0,,6688231.0
-83,08-01-2021,Totale vaccinazioni ogni cento abitanti,0.65,20.26,0.85,0.59,,2.02
-86,09-01-2021,Totale vaccinazioni,593975.0,1796309.0,601662.0,,,
-87,09-01-2021,Totale vaccinazioni ogni cento abitanti,0.71,20.75,1.0,,,
-90,10-01-2021,Totale vaccinazioni,626044.0,1838277.0,661112.0,,2677971.0,
+78,07-01-2021,Totale vaccinazioni,485660.0,1690263.0,425694.0,207323.0,,5919418.0
+79,07-01-2021,Totale vaccinazioni ogni cento abitanti,0.58,19.53,0.7,0.44,,1.79
+82,08-01-2021,Totale vaccinazioni,541897.0,1754020.0,517007.0,277976.0,,6688231.0
+83,08-01-2021,Totale vaccinazioni ogni cento abitanti,0.65,20.26,0.86,0.59,,2.02
+86,09-01-2021,Totale vaccinazioni,594907.0,1796590.0,601728.0,,,
+87,09-01-2021,Totale vaccinazioni ogni cento abitanti,0.71,20.76,1.0,,,
+90,10-01-2021,Totale vaccinazioni,627053.0,1838559.0,661178.0,,2677971.0,
 91,10-01-2021,Totale vaccinazioni ogni cento abitanti,0.75,21.24,1.09,,3.94,
-94,11-01-2021,Totale vaccinazioni,688915.0,1877023.0,736675.0,406091.0,2843815.0,8987322.0
+94,11-01-2021,Totale vaccinazioni,690318.0,1877306.0,736945.0,406091.0,2843815.0,8987322.0
 95,11-01-2021,Totale vaccinazioni ogni cento abitanti,0.82,21.69,1.22,0.87,4.19,2.72
-98,12-01-2021,Totale vaccinazioni,758093.0,1934510.0,812356.0,488122.0,3067541.0,9327138.0
-99,12-01-2021,Totale vaccinazioni ogni cento abitanti,0.9,22.35,1.34,1.04,4.52,2.82
-102,13-01-2021,Totale vaccinazioni,,2038888.0,885814.0,581638.0,,10278462.0
-103,13-01-2021,Totale vaccinazioni ogni cento abitanti,,23.56,1.47,1.24,,3.11
-106,14-01-2021,Totale vaccinazioni,,2047880.0,,,,
-107,14-01-2021,Totale vaccinazioni ogni cento abitanti,,23.66,,,,
+98,12-01-2021,Totale vaccinazioni,764339.0,1934874.0,812875.0,488122.0,3067541.0,9327138.0
+99,12-01-2021,Totale vaccinazioni ogni cento abitanti,0.91,22.35,1.34,1.04,4.52,2.82
+102,13-01-2021,Totale vaccinazioni,842455.0,2040593.0,895220.0,581638.0,,10278462.0
+103,13-01-2021,Totale vaccinazioni ogni cento abitanti,1.01,23.58,1.48,1.24,,3.11
+106,14-01-2021,Totale vaccinazioni,,2122778.0,908989.0,676186.0,,11148991.0
+107,14-01-2021,Totale vaccinazioni ogni cento abitanti,,24.53,1.5,1.45,,3.37
